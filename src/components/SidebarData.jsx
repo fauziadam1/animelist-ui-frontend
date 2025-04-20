@@ -1,35 +1,35 @@
 import React from "react";
+import { GoHomeFill as HomeIcon } from "react-icons/go";
+import { SiFireship as FireIcon} from "react-icons/si";
+import { TbDiamondFilled as DmIcon} from "react-icons/tb";
+import { FaStar as StarIcon} from "react-icons/fa6";
+import { RiSettings3Fill as SettingIcon} from "react-icons/ri";
 
 const SideBarData = [
     {
         title: "Beranda",
         path: "/dashboard",
-        icon: "",
-        cName: "nav-text",
+        icon: <HomeIcon/>,
     },
     {
         title: "Trending",
         path: "/dashboard",
-        icon: "",
-        cName: "nav-text",
+        icon: <FireIcon/>,
     },
     {
-        title: "Anime",
+        title: "Premium",
         path: "/dashboard",
-        icon: "",
-        cName: "nav-text",
+        icon: <DmIcon/>,
     },
     {
-        title: "K-Drama",
+        title: "Favorit",
         path: "/dashboard",
-        icon: "",
-        cName: "nav-text",
+        icon: <StarIcon/>,
     },
     {
-        title: "Film",
+        title: "Setting",
         path: "/dashboard",
-        icon: "",
-        cName: "nav-text",
+        icon: <SettingIcon/>,
     }
 ]
 
