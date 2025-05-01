@@ -14,22 +14,23 @@ const SideBarData = [
     {
         title: "Trending",
         path: "/dashboard",
-        icon: <FireIcon/>,
+        icon: <FireIcon className="text-orange-400"/>,
     },
     {
         title: "Premium",
         path: "/dashboard",
-        icon: <DmIcon/>,
+        icon: <DmIcon className="text-blue-300"/>,
     },
     {
         title: "Favorit",
         path: "/dashboard",
-        icon: <StarIcon/>,
+        icon: <StarIcon className="text-yellow-400"/>,
     },
     {
-        title: "Setting",
+        title: "Pengaturan",
         path: "/dashboard",
-        icon: <SettingIcon/>,
+        icon: <SettingIcon className="text-gray-500"/>,
+        class: "setting"
     }
 ]
 

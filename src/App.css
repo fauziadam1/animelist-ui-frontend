@@ -8,3 +8,7 @@ html {
   box-sizing: border-box;
   background-color: #ebf6ff;
 }
+
+.setting {
+  margin-top: 26rem;
+}

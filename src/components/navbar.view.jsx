@@ -7,6 +7,7 @@ import { TbDiamondFilled as DmIcon } from "react-icons/tb";
 import { FaStar as StarIcon } from "react-icons/fa6";
 import { RiSettings3Fill as SettingIcon } from "react-icons/ri";
 import SideBarData from './SidebarData';
+import Search from './searchbar.view';
 
 function Navbar() {
 
@@ -15,20 +16,21 @@ function Navbar() {
 
   return (
     <nav>
-      <div className='bg-white w-full pl-8 pr-8 p-8 fixed z-1000'>
-        <div className='flex items-center gap-4'>
+      <div className='bg-white w-full pl-8 pr-8 p-6 fixed z-1000 flex items-center justify-between'>
+        <div className='flex items-center gap-8'>
           <MenuIcon className='text-[30px] cursor-pointer' onClick={showSidebar} />
           <h1 className='font-bold text-3xl'>AnimeList</h1>
         </div>
+        <Search/>
       </div>
       <aside className={`${open ? "w-65" : "w-25"} bg-white top-0 h-screen p-4 overflow-hidden duration-200`}>
-        <ul className='pt-25 flex flex-col gap-4'>
+        <ul className='pt-30 flex flex-col gap-4'>
           {SideBarData.map((item, index) => {
             return (
-              <li key={index}>
-                <Link to={item.path} className='flex items-center gap-4 hover:bg-[#ebf6ff] p-4 rounded-2xl'>
+              <li key={index} className={`${item.class} relative`}>
+                <Link to={item.path} className='flex items-center gap-8 hover:bg-[#ebf6ff] p-4 rounded-2xl'>
                   <span className='text-3xl'>{item.icon}</span>
-                  <h1 className={`${!open && "scale-0"}`}>{item.title}</h1>
+                  <h1 className={`${!open && "opacity-0 duration-200"} duration-100 text-[19px]`}>{item.title}</h1>
                 </Link>
               </li>
             )})}
