@@ -9,6 +9,7 @@ import { RiSettings3Fill as SettingIcon } from "react-icons/ri";
 import SideBarData from './SidebarData';
 import Search from './searchbar.view';
 
+
 function Navbar() {
 
   const [open, setOpen] = useState(false);
@@ -21,7 +22,12 @@ function Navbar() {
           <MenuIcon className='text-[30px] cursor-pointer' onClick={showSidebar} />
           <h1 className='font-bold text-3xl'>AnimeList</h1>
         </div>
-        <Search/>
+        <div className='flex items-center gap-10'>
+          <Search/>
+          <div className='w-15 h-15 overflow-hidden flex items-center rounded-full bg-gray-500 cursor-pointer hover:border-3'>
+            <img src="./src/assets/profile.jpg" alt="" className='w-full h-full border-2 border-white rounded-full'/>
+          </div>
+        </div>
       </div>
       <aside className={`${open ? "w-65" : "w-25"} bg-white top-0 h-screen p-4 overflow-hidden duration-200`}>
         <ul className='pt-30 flex flex-col gap-4'>
