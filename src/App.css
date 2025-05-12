@@ -10,5 +10,6 @@ html {
 }
 
 .setting {
-  margin-top: 33rem;
+  position: absolute;
+  bottom: 20px;
 }

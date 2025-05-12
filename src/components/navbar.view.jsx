@@ -17,26 +17,26 @@ function Navbar() {
 
   return (
     <nav>
-      <div className='bg-white w-full pl-8 pr-8 p-6 fixed z-1000 flex items-center justify-between'>
+      <div className='bg-white w-full pl-8 pr-8 h-21 fixed z-1000 flex items-center justify-between'>
         <div className='flex items-center gap-8'>
-          <MenuIcon className='text-[30px] cursor-pointer' onClick={showSidebar} />
-          <h1 className='font-bold text-3xl'>AnimeList</h1>
+          <MenuIcon className='text-[25px] cursor-pointer' onClick={showSidebar} />
+          <h1 className='font-bold text-2xl'>AnimeList</h1>
         </div>
         <div className='flex items-center gap-10'>
           <Search/>
-          <div className='w-15 h-15 overflow-hidden flex items-center rounded-full bg-gray-500 cursor-pointer hover:border-3'>
+          <div className='w-12 h-12 overflow-hidden flex items-center rounded-full bg-gray-500 cursor-pointer hover:border-3'>
             <img src="./src/assets/profile.jpg" alt="" className='w-full h-full border-2 border-white rounded-full'/>
           </div>
         </div>
       </div>
-      <aside className={`${open ? "w-65" : "w-25"} bg-white top-0 h-screen p-4 overflow-hidden duration-200`}>
-        <ul className='pt-30 flex flex-col gap-4'>
+      <aside className={`${open ? "w-65" : "w-22"} bg-white top-0 h-screen p-4 overflow-hidden duration-200`}>
+        <ul className='pt-20 flex flex-col gap-4'>
           {SideBarData.map((item, index) => {
             return (
               <li key={index} className={`${item.class} relative`}>
                 <Link to={item.path} className='flex items-center gap-8 hover:bg-[#ebf6ff] p-4 rounded-2xl'>
-                  <span className='text-3xl'>{item.icon}</span>
-                  <h1 className={`${!open && "opacity-0 duration-200"} duration-100 text-[19px]`}>{item.title}</h1>
+                  <span className='text-[25px]'>{item.icon}</span>
+                  <h1 className={`${!open && "opacity-0 duration-200"} duration-100 text-[17px]`}>{item.title}</h1>
                 </Link>
               </li>
             )})}

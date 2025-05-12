@@ -1,16 +1,13 @@
-import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar.view';
-import Beranda from './pages/Beranda.view';
+import Beranda from './pages/Beranda/Beranda.view';
 
 function App() {
   return (
     <Router>
-      <Routes>
         <Navbar>
-          <Route path='/' element={<Beranda/>}/>
+          <Routes path='/' element={<Beranda/>}/>
         </Navbar>
-      </Routes>
     </Router>
   )
 }

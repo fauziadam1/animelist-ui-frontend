@@ -8,7 +8,7 @@ import { RiSettings3Fill as SettingIcon} from "react-icons/ri";
 const SideBarData = [
     {
         title: "Beranda",
-        path: "/dashboard",
+        path: "/src/pages/Beranda.view.jsx",
         icon: <HomeIcon/>,
     },
     {

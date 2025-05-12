@@ -2,7 +2,7 @@ import React from 'react'
 import Slider from "react-slick";
 
 function Banner() {
-  var settings = {
+  var Slide = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -13,7 +13,9 @@ function Banner() {
   return (
     <div>
         <main>
+          <Slide>
             <img src="./src/assets/OnePieceBanner.webp" alt="" />
+          </Slide>
         </main>
     </div>
   )
