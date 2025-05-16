@@ -16,7 +16,7 @@ function Navbar() {
   const showSidebar = () => setOpen(!open);
 
   return (
-    <nav>
+    <nav className="bg-transparent absolute">
       <div className='bg-white w-full pl-8 pr-8 h-21 fixed z-1000 flex items-center justify-between'>
         <div className='flex items-center gap-8'>
           <MenuIcon className='text-[25px] cursor-pointer' onClick={showSidebar} />

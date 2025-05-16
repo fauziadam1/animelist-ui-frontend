@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import Beranda from "./Beranda.view";
+import BerandaView from "./Beranda.view";
 
-export default function Home() {
+export default function Beranda() {
     useEffect (() => {
         document.title = "Beranda - AnimeList";
-    }, [])
+    }, []);
 
-    return <HomeView/>;
-};
+    return <BerandaView/>;
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import Banner from '../../components/bannerberanda.view';
 
-function Beranda() {
+function BerandaView() {
   return (
     <div>
         <div>
@@ -12,4 +12,4 @@ function Beranda() {
   )
 }
 
-export default Beranda;
+export default BerandaView;
