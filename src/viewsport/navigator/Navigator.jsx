@@ -5,16 +5,15 @@ import Layout from "../../layout/layout";
 
 function Navigator() {
     return (
-        <Suspense fallback={<p>Loading...</p>}>
-            <BrowserRouter>
-                <Layout>
+        <BrowserRouter>
+            <Suspense fallback={<p>Loading...</p>}>
+                {/* <Layout/> */}
                     <Routes>
                         {publicRoutes.map((route) => (<Route key={route.path} path={route.path} element={route.element} />))}
                         {privateRoutes.map((route) => (<Route key={route.path} path={route.path} element={route.element} />))}
                     </Routes>
-                </Layout>
-            </BrowserRouter>
-        </Suspense> 
+            </Suspense>
+        </BrowserRouter>
     );
 }
 

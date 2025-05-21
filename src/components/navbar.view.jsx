@@ -6,7 +6,7 @@ import { SiFireship as FireIcon } from "react-icons/si";
 import { TbDiamondFilled as DmIcon } from "react-icons/tb";
 import { FaStar as StarIcon } from "react-icons/fa6";
 import { RiSettings3Fill as SettingIcon } from "react-icons/ri";
-import SideBarData from './SidebarData';
+import { publicRoutes } from '../viewsport/navigator/navigator.data';
 import Search from './searchbar.view';
 
 
@@ -31,7 +31,7 @@ function Navbar() {
       </div>
       <aside className={`${open ? "w-65" : "w-22"} bg-white top-0 h-screen p-4 overflow-hidden duration-200`}>
         <ul className='pt-20 flex flex-col gap-4'>
-          {SideBarData.map((item, index) => {
+          {publicRoutes.map((item, index) => {
             return (
               <li key={index} className={`${item.class} relative`}>
                 <Link to={item.path} className='flex items-center gap-8 hover:bg-[#ebf6ff] p-4 rounded-2xl'>
